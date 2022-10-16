@@ -35,6 +35,7 @@
             this.txtSoB = new System.Windows.Forms.TextBox();
             this.txtKetQua = new System.Windows.Forms.TextBox();
             this.btKetQua = new System.Windows.Forms.Button();
+            this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbSoA
@@ -92,17 +93,28 @@
             // 
             this.btKetQua.Location = new System.Drawing.Point(71, 193);
             this.btKetQua.Name = "btKetQua";
-            this.btKetQua.Size = new System.Drawing.Size(255, 36);
+            this.btKetQua.Size = new System.Drawing.Size(130, 36);
             this.btKetQua.TabIndex = 2;
-            this.btKetQua.Text = "Kết quả";
+            this.btKetQua.Text = "Cộng";
             this.btKetQua.UseVisualStyleBackColor = true;
             this.btKetQua.Click += new System.EventHandler(this.btKetQua_Click);
+            // 
+            // btTru
+            // 
+            this.btTru.Location = new System.Drawing.Point(223, 193);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(130, 36);
+            this.btTru.TabIndex = 2;
+            this.btTru.Text = "Trừ";
+            this.btTru.UseVisualStyleBackColor = true;
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 377);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.btKetQua);
             this.Controls.Add(this.txtKetQua);
             this.Controls.Add(this.txtSoB);
@@ -126,6 +138,7 @@
         private System.Windows.Forms.TextBox txtSoB;
         private System.Windows.Forms.TextBox txtKetQua;
         private System.Windows.Forms.Button btKetQua;
+        private System.Windows.Forms.Button btTru;
     }
 }
 
