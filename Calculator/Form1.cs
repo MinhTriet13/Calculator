@@ -24,7 +24,9 @@ namespace Calculator
 
         private void btKetQua_Click(object sender, EventArgs e)
         {
-            if (txtSoA.Text != String.Empty)
+
+            if (txtSoA.Text != String.Empty && txtSoB.Text != String.Empty)
+
             {
                 double a = double.Parse(txtSoA.Text);
                 double b = double.Parse(txtSoB.Text);
